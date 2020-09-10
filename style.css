@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.analog-clock {
+    width: 240px;
+    height: 240px;
+    position: relative;
+    background-color: #e7f2f7;
+    border: 16px solid #52b6f0;
+    border-radius: 50%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.xxx {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.jarum {
+    position: absolute;
+    width: 50%;
+    background-color: hsl(0, 0%, 14%);
+    top: 50%;
+    transform: rotate(90deg);
+    transform-origin: 100%;
+    transition: all 0.5s cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.lingkaran-tengah {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: #232323;
+    border: 3px solid #52b6f0;
+    top: 50%;
+    left: 50%;
+    margin-top: -14px;
+    margin-left: -14px;
+    border-radius: 50%;
+}
+
+.jarum__detik {
+    height: 2px;
+    background-color: #F0C952;
+    border-radius: 1px;
+}
+
+.jarum__menit {
+    height: 4px;
+    border-radius: 4px;
+}
+
+.jarum__jam {
+    height: 8px;
+    width: 35%;
+    border-radius: 4px;
+    left: 15%;
+}
